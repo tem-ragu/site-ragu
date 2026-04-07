@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Jost", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Jost", sans-serif;
+
+  --color-bege: #F1E6D2;
+  --color-vermelho: #C00425;
+  --color-cereja: #74070E;
+  --color-preto: #1e2023;
+}
