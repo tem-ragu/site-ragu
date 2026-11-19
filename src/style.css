@@ -251,3 +251,10 @@ ul, ol { padding: 0; list-style: none; }
 .ponte-texto { display: flex; flex-direction: column; gap: 24px; }
 .ponte-texto p { font-size: clamp(18px, 1.5vw, 21px); line-height: 1.55; color: var(--rosa); }
 .link-forte { font-weight: 700; color: var(--vermelho); }
+
+/* Quem sou */
+.quem { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: clamp(32px, 5vw, 80px); align-items: center; }
+.quem-foto { aspect-ratio: 4 / 5; border-radius: 18px; background: var(--bege-escuro); display: flex; align-items: center; justify-content: center; padding: 24px; text-align: center; color: var(--tinta-suave); font-size: 15px; }
+.quem-foto img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; }
+.quem-texto { display: flex; flex-direction: column; gap: 22px; }
+.quem-texto p { font-size: clamp(18px, 1.5vw, 21px); line-height: 1.55; color: var(--tinta-suave); max-width: 560px; }
