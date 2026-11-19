@@ -34,3 +34,16 @@ if (form) {
 }
 
 document.querySelectorAll('[data-ano]').forEach((el) => { el.textContent = String(new Date().getFullYear()); });
+
+// Menu do celular
+const menuBtn = document.querySelector('[data-menu-btn]');
+const menu = document.querySelector('[data-menu]');
+if (menuBtn && menu) {
+  const fechar = () => { menu.classList.remove('aberto'); menuBtn.setAttribute('aria-expanded', 'false'); };
+  menuBtn.addEventListener('click', () => {
+    const aberto = menu.classList.toggle('aberto');
+    menuBtn.setAttribute('aria-expanded', String(aberto));
+  });
+  menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', fechar));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') fechar(); });
+}
