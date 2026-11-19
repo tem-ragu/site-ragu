@@ -1,20 +1,19 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Site Ragù Food Marketing
 
-# Run and deploy your AI Studio app
+Site estático (HTML + CSS + um pouco de JS), gerado com Vite.
 
-This contains everything you need to run your app locally.
+- `index.html` — página principal
+- `ferramenta/index.html` — página da ferramenta Ragù Gestão
+- `src/style.css` e `src/main.js` — estilos e scripts compartilhados
+- `public/` — logo, ícones e imagens
+- `vercel.json` — cabeçalhos de segurança
 
-View your app in AI Studio: https://ai.studio/apps/a6463e67-5034-4fe8-8041-d162d6f46dde
+## Rodar localmente
 
-## Run Locally
+    npm install
+    npm run dev
 
-**Prerequisites:**  Node.js
+## Publicar
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Tudo que entra no branch `main` é publicado automaticamente pela Vercel.
+A versão anterior do site está guardada no branch `claude/backup-site-antigo`.
