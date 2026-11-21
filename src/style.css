@@ -193,7 +193,7 @@ ul, ol { padding: 0; list-style: none; }
 .self-start { align-self: flex-start; }
 
 /* Cabeçalho da home (faixa clara) */
-.topo-home { position: relative; background: var(--vermelho); color: var(--bege); border-bottom: 1.5px solid rgba(241,230,210,.35); padding: 14px var(--pad); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; font-size: 15px; font-weight: 600; }
+.topo-home { position: relative; background: var(--vermelho); color: var(--bege); padding: 14px var(--pad); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; font-size: 15px; font-weight: 600; }
 .topo-marca { text-decoration: none; padding: 4px 0; }
 .topo-acoes { display: flex; align-items: center; gap: 4px; }
 .topo-nav { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(16px, 2.6vw, 30px); }
@@ -221,6 +221,7 @@ ul, ol { padding: 0; list-style: none; }
 .abertura-titulo .it { font-weight: 400; letter-spacing: -0.03em; white-space: nowrap; }
 .abertura-pe { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; }
 .abertura-sub { font-size: clamp(18px, 1.6vw, 22px); line-height: 1.45; max-width: 660px; }
+@media (min-width: 861px) { .abertura-pe .btn { display: none; } }
 .topo-marca img { display: block; width: clamp(112px, 11vw, 150px); height: auto; }
 
 /* Frase de ligação após as dores */
