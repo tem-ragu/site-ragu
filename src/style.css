@@ -58,8 +58,7 @@ ul, ol { padding: 0; list-style: none; }
 .acoes { display: flex; flex-wrap: wrap; gap: 12px; }
 
 /* Abertura */
-.abertura { padding: clamp(32px, 6vw, 80px) var(--pad) clamp(48px, 6vw, 88px); display: flex; flex-direction: column; gap: clamp(48px, 6vw, 96px); }
-.abertura .marca { width: min(100%, 1100px); }
+.abertura { padding: clamp(40px, 5vw, 72px) var(--pad) clamp(48px, 6vw, 80px); }
 .abertura-linha { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px; }
 .abertura-linha > p { max-width: 720px; font-size: clamp(26px, 3vw, 44px); line-height: 1.12; font-weight: 500; letter-spacing: -0.02em; }
 
@@ -194,8 +193,8 @@ ul, ol { padding: 0; list-style: none; }
 .self-start { align-self: flex-start; }
 
 /* Cabeçalho da home (faixa clara) */
-.topo-home { position: relative; background: var(--vermelho); color: var(--bege); border-bottom: 1.5px solid rgba(241,230,210,.35); padding: 14px var(--pad); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; font-size: 15px; font-weight: 600; }
-.topo-marca { text-decoration: none; padding: 10px 0; }
+.topo-home { position: relative; background: var(--vermelho); color: var(--bege); padding: 14px var(--pad); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; font-size: 15px; font-weight: 600; }
+.topo-marca { text-decoration: none; padding: 4px 0; }
 .topo-acoes { display: flex; align-items: center; gap: 4px; }
 .topo-nav { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(16px, 2.6vw, 30px); }
 .topo-nav a { text-decoration: none; padding: 10px 0; }
@@ -217,10 +216,13 @@ ul, ol { padding: 0; list-style: none; }
 }
 
 /* Abertura: textos de apoio */
-.abertura-texto { display: flex; flex-direction: column; gap: 18px; max-width: 760px; }
-.abertura-titulo { margin: 0; font-size: clamp(30px, 3.6vw, 54px); line-height: 1.12; font-weight: 500; letter-spacing: -0.02em; }
-.abertura-sub { font-size: clamp(18px, 1.6vw, 22px); line-height: 1.45; max-width: 620px; }
-.abertura-regiao { font-size: 15px; color: var(--rosa-claro); }
+.abertura-texto { display: flex; flex-direction: column; gap: clamp(28px, 3.4vw, 48px); width: 100%; }
+.abertura-titulo { margin: 0; font-size: clamp(42px, 8.6vw, 140px); line-height: .95; font-weight: 600; letter-spacing: -0.05em; }
+.abertura-titulo .it { font-weight: 400; letter-spacing: -0.03em; white-space: nowrap; }
+.abertura-pe { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; }
+.abertura-sub { font-size: clamp(18px, 1.6vw, 22px); line-height: 1.45; max-width: 660px; }
+@media (min-width: 861px) { .abertura-pe .btn { display: none; } }
+.topo-marca img { display: block; width: clamp(112px, 11vw, 150px); height: auto; }
 
 /* Frase de ligação após as dores */
 .ponte-frase { margin: clamp(48px, 6vw, 88px) auto 0; max-width: 980px; text-align: center; font-size: clamp(24px, 2.8vw, 40px); line-height: 1.25; font-weight: 600; letter-spacing: -0.02em; }
