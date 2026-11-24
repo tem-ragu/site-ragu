@@ -254,3 +254,21 @@ ul, ol { padding: 0; list-style: none; }
 .ponte-texto { display: flex; flex-direction: column; gap: 24px; }
 .ponte-texto p { font-size: clamp(18px, 1.5vw, 21px); line-height: 1.55; color: var(--rosa); }
 .link-forte { font-weight: 700; color: var(--vermelho); }
+
+/* Páginas legais (termos e privacidade) */
+.pagina-legal { background: var(--bege); color: var(--tinta); }
+.pagina-legal .topo { color: var(--tinta); }
+.pagina-legal .topo .pilula { border-color: var(--tinta); }
+.legal { max-width: 760px; margin: 0 auto; padding: clamp(24px, 5vw, 64px) var(--pad) clamp(56px, 8vw, 112px); font-size: 17px; line-height: 1.65; }
+.legal-data { font-size: 14px; font-weight: 600; opacity: .75; margin: 0 0 12px; }
+.legal h1 { font-size: clamp(40px, 6vw, 72px); line-height: 1; letter-spacing: -0.04em; font-weight: 700; margin: 0 0 32px; }
+.legal h1 .it { color: var(--vermelho); }
+.legal h2 { font-size: clamp(22px, 2.4vw, 28px); line-height: 1.2; letter-spacing: -0.02em; font-weight: 700; margin: 48px 0 12px; }
+.legal h3 { font-size: 18px; font-weight: 700; margin: 24px 0 8px; }
+.legal p, .legal ul { margin: 0 0 14px; }
+.legal ul { padding-left: 22px; }
+.legal li { margin-bottom: 6px; }
+.legal a { color: var(--vermelho); text-decoration: underline; text-underline-offset: 3px; }
+.legal-rodape { border-top: 1.5px solid rgba(42,26,18,.2); padding: 24px var(--pad); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--tinta); }
+.legal-rodape a { color: inherit; }
+.rodape .rodape-legal { display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; } .rodape .rodape-legal a { color: inherit; padding: 0; margin: 0; }
