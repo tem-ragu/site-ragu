@@ -254,3 +254,19 @@ ul, ol { padding: 0; list-style: none; }
 .ponte-texto { display: flex; flex-direction: column; gap: 24px; }
 .ponte-texto p { font-size: clamp(18px, 1.5vw, 21px); line-height: 1.55; color: var(--rosa); }
 .link-forte { font-weight: 700; color: var(--vermelho); }
+
+/* Página da ferramenta: ajustes de celular */
+@media (max-width: 700px) {
+  .so-desk { display: none; }
+  .topo { flex-wrap: nowrap; padding-top: 16px; padding-bottom: 16px; }
+  .topo nav a:not(.pilula) { display: none; }
+  .topo .pilula { padding: 8px 14px; }
+  .selo-bege { font-size: 13px; }
+  .f-abertura .lado { max-width: none; }
+  .f-abertura .acoes { display: flex; flex-direction: column; gap: 12px; }
+  .f-abertura .acoes .btn { width: 100%; justify-content: center; text-align: center; }
+  .f-tela { border-width: 4px; border-radius: 12px 12px 0 0; transform: translateY(24px); }
+  .recurso img, .recurso:nth-child(odd) img, .recurso:nth-child(even) img { transform: none; border-radius: 12px; }
+  .rodape-grade { grid-template-columns: 1fr 1fr; gap: 32px 20px; }
+  .rodape-marca { grid-column: 1 / -1; }
+}
