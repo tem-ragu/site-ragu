@@ -1,4 +1,7 @@
 import './style.css';
+import { iniciarAnalytics, track } from './analytics.js';
+
+iniciarAnalytics();
 
 // Vídeos do Instagram: só carregam quando a pessoa clica (mais rápido e
 // nenhum dado vai para o Instagram antes disso).
@@ -28,6 +31,7 @@ if (form) {
     const casa = limpa(dados.get('casa'));
     const whats = limpa(dados.get('whatsapp'));
     if (!nome || !casa) return;
+    track('pedido_acesso');
     const texto = `Olá! Quero testar a ferramenta da Ragù.\nNome: ${nome}\nEstabelecimento: ${casa}\nWhatsApp: ${whats}`;
     window.open(`https://wa.me/5548988730018?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
   });
