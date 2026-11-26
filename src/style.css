@@ -270,3 +270,12 @@ ul, ol { padding: 0; list-style: none; }
   .rodape-grade { grid-template-columns: 1fr 1fr; gap: 32px 20px; }
   .rodape-marca { grid-column: 1 / -1; }
 }
+
+/* Aviso de cookies */
+.aviso-cookies { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 50; max-width: 560px; margin: 0 auto; background: var(--tinta); color: var(--bege); border-radius: 16px; padding: 18px 20px; display: flex; gap: 16px; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,.25); font-size: 15px; line-height: 1.4; }
+.aviso-cookies p { margin: 0; }
+.aviso-cookies-botoes { display: flex; gap: 8px; flex-shrink: 0; }
+.aviso-cookies button { font: inherit; font-weight: 700; padding: 9px 16px; border-radius: 999px; border: 1.5px solid var(--bege); background: transparent; color: var(--bege); cursor: pointer; }
+.aviso-cookies button.aceitar { background: var(--bege); color: var(--tinta); }
+.aviso-cookies button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+@media (max-width: 560px) { .aviso-cookies { flex-direction: column; align-items: stretch; } .aviso-cookies-botoes button { flex: 1; } }
